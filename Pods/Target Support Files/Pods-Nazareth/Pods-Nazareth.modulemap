@@ -1,0 +1,6 @@
+framework module Pods_Nazareth {
+  umbrella header "Pods-Nazareth-umbrella.h"
+
+  export *
+  module * { export * }
+}

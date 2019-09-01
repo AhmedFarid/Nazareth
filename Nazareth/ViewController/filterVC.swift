@@ -10,21 +10,35 @@ import UIKit
 
 class filterVC: UIViewController {
 
+    
+    
+    @IBOutlet weak var catTF: UITextField!
+    @IBOutlet weak var fromTF: UITextField!
+    @IBOutlet weak var toTF: UITextField!
+    @IBOutlet weak var maxTF: UITextField!
+    @IBOutlet weak var minTF: UITextField!
+    @IBOutlet weak var keyTF: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageText()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func imageText() {
+        
+        
+        
+        if let myImage = UIImage(named: "calendar"){
+            
+            fromTF.withImage(direction: .Right, image: myImage, colorSeparator: UIColor.clear, colorBorder: UIColor.clear)
+        }
+        
+        if let myImage = UIImage(named: "calendar"){
+            
+            toTF.withImage(direction: .Right, image: myImage, colorSeparator: UIColor.clear, colorBorder: UIColor.clear)
+        }
     }
-    */
 
 }

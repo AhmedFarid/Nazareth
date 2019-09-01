@@ -7,21 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58E317CE23563D2EFFCCD25D /* Pods_Nazareth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84051EE62F81AA1153624FF /* Pods_Nazareth.framework */; };
+		690044702316D3FB0097F563 /* ArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900446F2316D3FB0097F563 /* ArticlesVC.swift */; };
+		691A0DC72312ED8400EED080 /* allProdectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A0DC62312ED8400EED080 /* allProdectCell.swift */; };
+		696882212316ACCB00D6BF10 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6968821F2316ACCB00D6BF10 /* SWRevealViewController.m */; };
+		696882232316B2FC00D6BF10 /* sideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696882222316B2FC00D6BF10 /* sideMenuVC.swift */; };
 		69A1C0BA2312A723009F399E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C0B92312A723009F399E /* AppDelegate.swift */; };
-		69A1C0BC2312A723009F399E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C0BB2312A723009F399E /* ViewController.swift */; };
+		69A1C0BC2312A723009F399E /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C0BB2312A723009F399E /* homeVC.swift */; };
 		69A1C0BF2312A723009F399E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C0BD2312A723009F399E /* Main.storyboard */; };
 		69A1C0C12312A725009F399E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C0C02312A725009F399E /* Assets.xcassets */; };
 		69A1C0C42312A725009F399E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C0C22312A725009F399E /* LaunchScreen.storyboard */; };
+		69A1C0CE2312B3E7009F399E /* reondedTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C0CD2312B3E7009F399E /* reondedTF.swift */; };
+		69A251912312C0AB00396498 /* homeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A251902312C0AB00396498 /* homeCell.swift */; };
+		69B648F42312CDC20068AB8F /* prodectsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B648F32312CDC20068AB8F /* prodectsCell.swift */; };
+		69B648F62312D1D00068AB8F /* subCatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B648F52312D1D00068AB8F /* subCatVC.swift */; };
+		69E4F55B23154469001F7409 /* prodectImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F55A23154469001F7409 /* prodectImagesCell.swift */; };
+		69E4F55D231544E7001F7409 /* prodectDetialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F55C231544E7001F7409 /* prodectDetialsVC.swift */; };
+		69E4F55F23154D07001F7409 /* roundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F55E23154D07001F7409 /* roundedBtn.swift */; };
+		69E4F561231566E1001F7409 /* filterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F560231566E1001F7409 /* filterVC.swift */; };
+		69E4F5632315742E001F7409 /* reviwesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F5622315742E001F7409 /* reviwesVC.swift */; };
+		69E4F56523157773001F7409 /* reviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F56423157773001F7409 /* reviewCell.swift */; };
+		69E4F56723157AFD001F7409 /* searchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F56623157AFD001F7409 /* searchResultVC.swift */; };
+		69E4F56923157B52001F7409 /* searchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F56823157B52001F7409 /* searchResultCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6900446F2316D3FB0097F563 /* ArticlesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVC.swift; sourceTree = "<group>"; };
+		691A0DC62312ED8400EED080 /* allProdectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allProdectCell.swift; sourceTree = "<group>"; };
+		6968821E2316ACCA00D6BF10 /* Nazareth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nazareth-Bridging-Header.h"; sourceTree = "<group>"; };
+		6968821F2316ACCB00D6BF10 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		696882202316ACCB00D6BF10 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		696882222316B2FC00D6BF10 /* sideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenuVC.swift; sourceTree = "<group>"; };
 		69A1C0B62312A723009F399E /* Nazareth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nazareth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A1C0B92312A723009F399E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69A1C0BB2312A723009F399E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69A1C0BB2312A723009F399E /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
 		69A1C0BE2312A723009F399E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69A1C0C02312A725009F399E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69A1C0C32312A725009F399E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69A1C0C52312A725009F399E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A1C0CD2312B3E7009F399E /* reondedTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reondedTF.swift; sourceTree = "<group>"; };
+		69A251902312C0AB00396498 /* homeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCell.swift; sourceTree = "<group>"; };
+		69B648F32312CDC20068AB8F /* prodectsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prodectsCell.swift; sourceTree = "<group>"; };
+		69B648F52312D1D00068AB8F /* subCatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subCatVC.swift; sourceTree = "<group>"; };
+		69E4F55A23154469001F7409 /* prodectImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prodectImagesCell.swift; sourceTree = "<group>"; };
+		69E4F55C231544E7001F7409 /* prodectDetialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prodectDetialsVC.swift; sourceTree = "<group>"; };
+		69E4F55E23154D07001F7409 /* roundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedBtn.swift; sourceTree = "<group>"; };
+		69E4F560231566E1001F7409 /* filterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterVC.swift; sourceTree = "<group>"; };
+		69E4F5622315742E001F7409 /* reviwesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviwesVC.swift; sourceTree = "<group>"; };
+		69E4F56423157773001F7409 /* reviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewCell.swift; sourceTree = "<group>"; };
+		69E4F56623157AFD001F7409 /* searchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultVC.swift; sourceTree = "<group>"; };
+		69E4F56823157B52001F7409 /* searchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultCell.swift; sourceTree = "<group>"; };
+		71ECEDE92E468B4C8168D513 /* Pods-Nazareth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nazareth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth.debug.xcconfig"; sourceTree = "<group>"; };
+		A84051EE62F81AA1153624FF /* Pods_Nazareth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nazareth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6012A4865E3FB20FF9A48D /* Pods-Nazareth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nazareth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +67,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E317CE23563D2EFFCCD25D /* Pods_Nazareth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40DFCC93B01FF5AAB7B0EFDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71ECEDE92E468B4C8168D513 /* Pods-Nazareth.debug.xcconfig */,
+				AE6012A4865E3FB20FF9A48D /* Pods-Nazareth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6968821D2316AC7400D6BF10 /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				696882202316ACCB00D6BF10 /* SWRevealViewController.h */,
+				6968821F2316ACCB00D6BF10 /* SWRevealViewController.m */,
+				6968821E2316ACCA00D6BF10 /* Nazareth-Bridging-Header.h */,
+			);
+			path = SWReveal;
+			sourceTree = "<group>";
+		};
 		69A1C0AD2312A723009F399E = {
 			isa = PBXGroup;
 			children = (
 				69A1C0B82312A723009F399E /* Nazareth */,
 				69A1C0B72312A723009F399E /* Products */,
+				40DFCC93B01FF5AAB7B0EFDE /* Pods */,
+				C2572BB9CD285E51105A6279 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +114,62 @@
 		69A1C0B82312A723009F399E /* Nazareth */ = {
 			isa = PBXGroup;
 			children = (
-				69A1C0B92312A723009F399E /* AppDelegate.swift */,
-				69A1C0BB2312A723009F399E /* ViewController.swift */,
+				6968821D2316AC7400D6BF10 /* SWReveal */,
+				69A2518F2312C08800396498 /* Cells */,
+				69A1C0CC2312B3C2009F399E /* View */,
+				69A1C0CB2312ADBB009F399E /* ViewController */,
 				69A1C0BD2312A723009F399E /* Main.storyboard */,
+				69A1C0B92312A723009F399E /* AppDelegate.swift */,
 				69A1C0C02312A725009F399E /* Assets.xcassets */,
 				69A1C0C22312A725009F399E /* LaunchScreen.storyboard */,
 				69A1C0C52312A725009F399E /* Info.plist */,
 			);
 			path = Nazareth;
+			sourceTree = "<group>";
+		};
+		69A1C0CB2312ADBB009F399E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				69A1C0BB2312A723009F399E /* homeVC.swift */,
+				69B648F52312D1D00068AB8F /* subCatVC.swift */,
+				69E4F55C231544E7001F7409 /* prodectDetialsVC.swift */,
+				69E4F560231566E1001F7409 /* filterVC.swift */,
+				69E4F5622315742E001F7409 /* reviwesVC.swift */,
+				69E4F56623157AFD001F7409 /* searchResultVC.swift */,
+				696882222316B2FC00D6BF10 /* sideMenuVC.swift */,
+				6900446F2316D3FB0097F563 /* ArticlesVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		69A1C0CC2312B3C2009F399E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69A1C0CD2312B3E7009F399E /* reondedTF.swift */,
+				69E4F55E23154D07001F7409 /* roundedBtn.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69A2518F2312C08800396498 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69A251902312C0AB00396498 /* homeCell.swift */,
+				69B648F32312CDC20068AB8F /* prodectsCell.swift */,
+				691A0DC62312ED8400EED080 /* allProdectCell.swift */,
+				69E4F55A23154469001F7409 /* prodectImagesCell.swift */,
+				69E4F56423157773001F7409 /* reviewCell.swift */,
+				69E4F56823157B52001F7409 /* searchResultCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C2572BB9CD285E51105A6279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A84051EE62F81AA1153624FF /* Pods_Nazareth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69A1C0C82312A725009F399E /* Build configuration list for PBXNativeTarget "Nazareth" */;
 			buildPhases = (
+				EE774BD78E244F1CB8A55FBD /* [CP] Check Pods Manifest.lock */,
 				69A1C0B22312A723009F399E /* Sources */,
 				69A1C0B32312A723009F399E /* Frameworks */,
 				69A1C0B42312A723009F399E /* Resources */,
+				21ED172273C3FEDEE00603E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +206,7 @@
 				TargetAttributes = {
 					69A1C0B52312A723009F399E = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,13 +241,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21ED172273C3FEDEE00603E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE774BD78E244F1CB8A55FBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nazareth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69A1C0B22312A723009F399E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A1C0BC2312A723009F399E /* ViewController.swift in Sources */,
+				69E4F561231566E1001F7409 /* filterVC.swift in Sources */,
+				696882232316B2FC00D6BF10 /* sideMenuVC.swift in Sources */,
+				69B648F62312D1D00068AB8F /* subCatVC.swift in Sources */,
+				69E4F55D231544E7001F7409 /* prodectDetialsVC.swift in Sources */,
+				69E4F55B23154469001F7409 /* prodectImagesCell.swift in Sources */,
+				69A1C0BC2312A723009F399E /* homeVC.swift in Sources */,
 				69A1C0BA2312A723009F399E /* AppDelegate.swift in Sources */,
+				69B648F42312CDC20068AB8F /* prodectsCell.swift in Sources */,
+				691A0DC72312ED8400EED080 /* allProdectCell.swift in Sources */,
+				69E4F56923157B52001F7409 /* searchResultCell.swift in Sources */,
+				69E4F5632315742E001F7409 /* reviwesVC.swift in Sources */,
+				69A251912312C0AB00396498 /* homeCell.swift in Sources */,
+				696882212316ACCB00D6BF10 /* SWRevealViewController.m in Sources */,
+				69E4F55F23154D07001F7409 /* roundedBtn.swift in Sources */,
+				69E4F56723157AFD001F7409 /* searchResultVC.swift in Sources */,
+				69A1C0CE2312B3E7009F399E /* reondedTF.swift in Sources */,
+				69E4F56523157773001F7409 /* reviewCell.swift in Sources */,
+				690044702316D3FB0097F563 /* ArticlesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +454,10 @@
 		};
 		69A1C0C92312A725009F399E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71ECEDE92E468B4C8168D513 /* Pods-Nazareth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = Nazareth/Info.plist;
@@ -291,6 +467,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.farido.Ebakers.Nazareth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nazareth/SWReveal/Nazareth-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +476,10 @@
 		};
 		69A1C0CA2312A725009F399E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6012A4865E3FB20FF9A48D /* Pods-Nazareth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = Nazareth/Info.plist;
@@ -309,6 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.farido.Ebakers.Nazareth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nazareth/SWReveal/Nazareth-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
