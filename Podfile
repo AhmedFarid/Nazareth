@@ -13,5 +13,9 @@ target 'Nazareth' do
   pod 'Kingfisher'
   pod 'IQKeyboardManagerSwift'
   pod 'Cosmos', '~> 19.0'
-
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  
+  
+   
 end

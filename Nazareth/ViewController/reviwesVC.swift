@@ -7,23 +7,76 @@
 //
 
 import UIKit
+import Cosmos
 
 class reviwesVC: UIViewController {
     
+    var singleItem: prodectData?
+    var images = [prodectImages]()
+    var comments = [reviewsData]()
+    
+    @IBOutlet weak var totalReat: CosmosView!
+    @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var reviewBTN: UIButton!
     @IBOutlet weak var reviewTable: UITableView!
     @IBOutlet weak var prodectCollection: UICollectionView!
+    @IBOutlet weak var nameTF: UILabel!
+    @IBOutlet weak var avgPebleLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         reviewTable.delegate = self
         reviewTable.dataSource = self
         prodectCollection.delegate = self
         prodectCollection.dataSource = self
+        handleRefreshgetProdectsImage()
+        handleRefreshgetComments()
+        setUpView()
     }
     
     
+    @objc private func handleRefreshgetProdectsImage() {
+        API_Home.prodectIamges(type_id: singleItem?.id ?? 0){(error: Error?, images: [prodectImages]?) in
+            if let images = images {
+                self.images = images
+                print("xxx\(self.images)")
+                self.prodectCollection.reloadData()
+            }
+        }
+    }
     
     
+    @objc private func handleRefreshgetComments() {
+        Api_menu.reviews(product_id: "\(singleItem?.id ?? 0)"){(error: Error?, comments: [reviewsData]?) in
+            if let comments = comments {
+                self.comments = comments
+                print("xxx\(self.images)")
+                self.reviewTable.reloadData()
+            }
+        }
+    }
+    
+    func setUpView(){
+        totalReat.rating = singleItem?.average_rating ?? 0.0
+        avgPebleLbl.text = "(\(singleItem?.total_rate ?? 0) person review)"
+        nameTF.text = singleItem?.name
+        img.image = UIImage(named: "3")
+        let s = singleItem?.image
+        let encodedLink = s?.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+        let encodedURL = NSURL(string: encodedLink!)! as URL
+        img.kf.indicatorType = .activity
+        if let url = URL(string: "\(encodedURL)") {
+            print("g\(url)")
+            img.kf.setImage(with: url)
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destaiantion = segue.destination as? setReviewVC{
+            destaiantion.singleItem = singleItem
+        }
+    }
 }
 
 
@@ -33,24 +86,24 @@ extension reviwesVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return comments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? reviewCell{
+            let coments = comments[indexPath.row]
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
+            cell.configuerCell(prodect: coments)
             return cell
         }else {
             return reviewCell()
         }
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "suge", sender: nil)
-//    }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        performSegue(withIdentifier: "suge", sender: nil)
+    //    }
 }
-
-
 
 
 extension reviwesVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout  {
@@ -59,12 +112,22 @@ extension reviwesVC: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        
+        return images.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = prodectCollection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! prodectImagesCell
-        return cell
+        
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? prodectImagesCell {
+            let imageProdect = images[indexPath.row]
+            cell.configuerCell(prodect: imageProdect)
+            
+            return cell
+        }else {
+            return prodectImagesCell()
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -73,6 +136,3 @@ extension reviwesVC: UICollectionViewDelegate,UICollectionViewDataSource,UIColle
     }
     
 }
-
-
-

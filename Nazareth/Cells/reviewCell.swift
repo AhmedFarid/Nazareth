@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Cosmos
 
 class reviewCell: UITableViewCell {
 
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var rete: CosmosView!
+    @IBOutlet weak var comment: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layer.cornerRadius = 8.0
@@ -17,12 +24,25 @@ class reviewCell: UITableViewCell {
         self.layer.borderColor = #colorLiteral(red: 0.9333333333, green: 0.9333333333, blue: 0.9333333333, alpha: 1)
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        let padding = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
-        bounds = bounds.inset(by: padding)
-        
+    override var frame: CGRect {
+      get {
+          return super.frame
+      }
+      set (newFrame) {
+          var frame =  newFrame
+          frame.origin.y += 4
+          frame.size.height -= 2 * 5
+          super.frame = frame
+      }
     }
     
+    
+    func configuerCell(prodect: reviewsData) {
+        name.text = prodect.name
+        date.text = prodect.created_at
+        rete.rating = Double(prodect.review) ?? 0.0
+        comment.text = prodect.comment
+       }
+       
 
 }

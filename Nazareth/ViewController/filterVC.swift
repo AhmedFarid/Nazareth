@@ -7,38 +7,33 @@
 //
 
 import UIKit
+import Cosmos
 
 class filterVC: UIViewController {
 
     
-    
+    var singleItem: homeData?
+    var subCat = [subCatData]()
     @IBOutlet weak var catTF: UITextField!
-    @IBOutlet weak var fromTF: UITextField!
-    @IBOutlet weak var toTF: UITextField!
-    @IBOutlet weak var maxTF: UITextField!
-    @IBOutlet weak var minTF: UITextField!
-    @IBOutlet weak var keyTF: UITextField!
+    @IBOutlet weak var rate: CosmosView!
+    
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageText()
 
     }
     
-    func imageText() {
-        
-        
-        
-        if let myImage = UIImage(named: "calendar"){
-            
-            fromTF.withImage(direction: .Right, image: myImage, colorSeparator: UIColor.clear, colorBorder: UIColor.clear)
-        }
-        
-        if let myImage = UIImage(named: "calendar"){
-            
-            toTF.withImage(direction: .Right, image: myImage, colorSeparator: UIColor.clear, colorBorder: UIColor.clear)
-        }
-    }
-
+    @objc private func handleRefreshgetSubCat() {
+           API_Home.SubCategories(category_id: singleItem?.id ?? 0){(error: Error?, subCat: [subCatData]?) in
+               if let subCat = subCat {
+                   self.subCat = subCat
+                   print("xxx\(self.subCat)")
+               }
+           }
+       }
+    
+    
 }

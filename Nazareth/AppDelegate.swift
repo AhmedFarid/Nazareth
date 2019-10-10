@@ -8,20 +8,21 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import GoogleMaps
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
         // Override point for customization after application launch.
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: UIControl.State.highlighted)
         
+        GMSServices.provideAPIKey("AIzaSyAYa9PutX374CC1LDExidruKitbpdf0hgk")
+        //GMSPlacesClient.provideAPIKey("AIzaSyBpECT_I2Q_4uNTMurgMtDVJiPJowwccFY")
         
         return true
     }

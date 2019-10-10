@@ -26,4 +26,8 @@ class prodectsCell: UICollectionViewCell {
             name.textColor = isSelected ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.8872488141, green: 0.3153338432, blue: 0.2478202581, alpha: 1)
         }
     }
+    
+    func configuerCell(prodect: subCatData) {
+        name.text = prodect.name
+    }
 }

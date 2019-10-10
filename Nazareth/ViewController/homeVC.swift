@@ -9,17 +9,15 @@
 import UIKit
 
 class homeVC: UIViewController {
-
+    
+    @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchTF: reondedTF!
+    
+    var cat = [homeData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        
-        
-        
+        searchTF.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         imageText()
@@ -28,19 +26,31 @@ class homeVC: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         //revealViewController()?.rightRevealToggle(animated: false)
         
+        handleRefreshgetCat()
+        
+    }
+    
+    @objc private func handleRefreshgetCat() {
+        API_Home.categories{(error: Error?, cat: [homeData]?) in
+            if let cat = cat {
+                self.cat = cat
+                print("xxx\(self.cat)")
+                self.tableView.reloadData()
+            }
+        }
     }
     
     public var screenWidth: CGFloat {
         return UIScreen.main.bounds.width
     }
-
+    
     @IBAction func sideMenuBTN(_ sender: Any) {
         if let vc = self.revealViewController() {
             vc.revealToggle(animated: true)
             //self.view.addGestureRecognizer(vc.panGestureRecognizer())
             self.view.addGestureRecognizer(vc.tapGestureRecognizer())
             vc.rearViewRevealWidth = screenWidth - 60
-
+            
             //        revealViewController().rightViewRevealWidth = kWIDTH
             //        revealViewController().frontViewPosition =
             
@@ -56,7 +66,13 @@ class homeVC: UIViewController {
         }
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destaiantion = segue.destination as? subCatVC{
+            destaiantion.singleItem = sender as? homeData
+        }else if let destaination = segue.destination as? searchResultVC{
+            destaination.searchWord = searchTF.text ?? ""
+        }
+    }
 }
 
 extension homeVC: UITableViewDelegate,UITableViewDataSource {
@@ -65,30 +81,33 @@ extension homeVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return cat.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? homeCell{
-        cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        return cell
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+            
+            let cats = cat[indexPath.row]
+            cell.configuerCell(prodect: cats)
+            return cell
         }else {
             return homeCell()
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "suge", sender: nil)
+        performSegue(withIdentifier: "suge", sender: cat[indexPath.row])
     }
     
     
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return 10.0
-//    }
+    //    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    //        return 10.0
+    //    }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 64
-//    }
+    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    //        return 64
+    //    }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 64
@@ -102,3 +121,13 @@ extension homeVC: UITableViewDelegate,UITableViewDataSource {
     }
 }
 
+extension homeVC: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+
+        textField.resignFirstResponder()  //if desired
+        performSegue(withIdentifier: "suge1", sender: nil)
+        return true
+    }
+}
