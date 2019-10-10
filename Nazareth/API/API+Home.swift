@@ -56,6 +56,8 @@ class API_Home: NSObject {
             "category_id": category_id
         ]
         
+        print(parameters)
+        
         let headers = [
             "X-localization": lang
         ]
