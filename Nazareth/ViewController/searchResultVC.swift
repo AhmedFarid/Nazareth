@@ -12,13 +12,15 @@ class searchResultVC: UIViewController {
     
     var searchWord = ""
     var prodects = [prodectData]()
+    var catsID = 0
+    var rate = 0.0
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        getData()
+        getdataFromFilter()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -28,16 +30,25 @@ class searchResultVC: UIViewController {
         }
     }
     
-    func getData() {
-        API_Home.searchAPI(search: searchWord){(error: Error?, prodects: [prodectData]?) in
-            if let prodects = prodects {
-                self.prodects = prodects
-                print("xxx\(self.prodects)")
-                self.tableView.reloadData()
+    func getdataFromFilter() {
+        if rate != 0.0 || catsID != 0 {
+            API_Home.filterApi(subcategoryId: catsID, rate: rate){(error: Error?, prodects: [prodectData]?) in
+                if let prodects = prodects {
+                    self.prodects = prodects
+                    print("xxx\(self.prodects)")
+                    self.tableView.reloadData()
+                }
+            }
+        }else {
+            API_Home.searchAPI(search: searchWord){(error: Error?, prodects: [prodectData]?) in
+                if let prodects = prodects {
+                    self.prodects = prodects
+                    print("xxx\(self.prodects)")
+                    self.tableView.reloadData()
+                }
             }
         }
     }
-    
 }
 
 extension searchResultVC: UITableViewDelegate,UITableViewDataSource {

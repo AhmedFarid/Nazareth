@@ -261,7 +261,7 @@
                         <outlet property="collectionView" destination="r3X-vh-xy2" id="YUO-SO-ShF"/>
                         <outlet property="collectionViewProdects" destination="KHg-Zv-Yga" id="Ce7-eb-Taw"/>
                         <segue destination="ZLA-vU-7Gj" kind="show" identifier="suge" id="nMv-VV-4sT"/>
-                        <segue destination="yZv-7y-ld8" kind="show" identifier="suge" id="sJ3-hg-eDY"/>
+                        <segue destination="yZv-7y-ld8" kind="show" identifier="suge2" id="sJ3-hg-eDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kit-4o-4bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -569,14 +569,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01_splash" translatesAutoresizingMaskIntoConstraints="NO" id="vk8-3O-PGG">
-                                                <rect key="frame" x="0.0" y="-50" width="414" height="350"/>
+                                                <rect key="frame" x="0.0" y="-64" width="414" height="350"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1W-FZ-fVf">
-                                                <rect key="frame" x="0.0" y="-50" width="414" height="350"/>
+                                                <rect key="frame" x="0.0" y="-64" width="414" height="350"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.058823529409999999" blue="0.3294117647" alpha="0.31709397010000001" colorSpace="calibratedRGB"/>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sAD-eW-yfh">
-                                                <rect key="frame" x="0.0" y="232" width="414" height="100"/>
+                                                <rect key="frame" x="0.0" y="218" width="414" height="100"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Hvf-iK-piL"/>
@@ -613,13 +613,13 @@
                                                 </cells>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best food and drink in Nazareth" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBD-uw-zcu">
-                                                <rect key="frame" x="16" y="348" width="382" height="22.666666666666686"/>
+                                                <rect key="frame" x="16" y="334" width="382" height="22.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                                 <color key="textColor" red="0.88724881410598755" green="0.31533384323120117" blue="0.24782025814056396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Y8o-Ag-0vJ">
-                                                <rect key="frame" x="16" y="378.66666666666669" width="248" height="20"/>
+                                                <rect key="frame" x="16" y="364.66666666666669" width="248" height="20"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjM-dK-FqY" customClass="CosmosView" customModule="Cosmos">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="20"/>
@@ -645,20 +645,20 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60w-cG-0Di">
-                                                <rect key="frame" x="16" y="414.66666666666669" width="382" height="78.333333333333314"/>
+                                                <rect key="frame" x="16" y="400.66666666666669" width="382" height="78.333333333333314"/>
                                                 <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply.</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                                 <color key="textColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where The Pancakes Are" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="age-mn-Pff">
-                                                <rect key="frame" x="16" y="509.00000000000006" width="382" height="22.666666666666686"/>
+                                                <rect key="frame" x="16" y="495" width="382" height="22.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                                 <color key="textColor" red="0.88724881410598755" green="0.31533384323120117" blue="0.24782025814056396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-mj-tKC">
-                                                <rect key="frame" x="16" y="539.66666666666663" width="382" height="94"/>
+                                                <rect key="frame" x="16" y="525.66666666666663" width="382" height="94"/>
                                                 <string key="text">Address
 Flat Iron Square
 85a Southwark Bridge Road
@@ -670,7 +670,7 @@ SE1 0NQ</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wc-YM-T3j" customClass="roundedBtn" customModule="Nazareth" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="649.66666666666663" width="382" height="50"/>
+                                                <rect key="frame" x="16" y="635.66666666666663" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="qFR-tC-JE9"/>
                                                 </constraints>
@@ -694,7 +694,7 @@ SE1 0NQ</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-Ll-tQ5" customClass="roundedBtn" customModule="Nazareth" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="707.66666666666663" width="382" height="50"/>
+                                                <rect key="frame" x="16" y="693.66666666666663" width="382" height="50"/>
                                                 <color key="backgroundColor" red="0.88724881410598755" green="0.31533384323120117" blue="0.24782025814056396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="PIF-1g-0SQ"/>
@@ -717,13 +717,13 @@ SE1 0NQ</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Similar Restaurant " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqb-wN-uhM">
-                                                <rect key="frame" x="16" y="773.66666666666663" width="382" height="22.666666666666629"/>
+                                                <rect key="frame" x="16" y="759.66666666666663" width="382" height="22.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                                 <color key="textColor" red="0.88724881410000001" green="0.31533384320000002" blue="0.2478202581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wny-25-kvc">
-                                                <rect key="frame" x="16" y="804.33333333333337" width="398" height="187.66666666666663"/>
+                                                <rect key="frame" x="16" y="790.33333333333337" width="398" height="201.66666666666663"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vqD-rJ-Cid">
                                                     <size key="itemSize" width="175" height="203"/>
@@ -733,7 +733,7 @@ SE1 0NQ</string>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="hKP-hA-U21" customClass="allProdectCell" customModule="Nazareth" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="-7.666666666666667" width="175" height="203"/>
+                                                        <rect key="frame" x="0.0" y="-0.66666666666666663" width="175" height="203"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="175" height="203"/>
@@ -786,7 +786,7 @@ SE1 0NQ</string>
                                         <constraints>
                                             <constraint firstItem="sAD-eW-yfh" firstAttribute="leading" secondItem="Z1W-FZ-fVf" secondAttribute="leading" id="0Yc-00-OSb"/>
                                             <constraint firstItem="wny-25-kvc" firstAttribute="trailing" secondItem="ZBD-uw-zcu" secondAttribute="trailing" constant="16" id="1LT-ts-ZdC"/>
-                                            <constraint firstItem="vk8-3O-PGG" firstAttribute="top" secondItem="LO6-CA-Iyu" secondAttribute="top" constant="-50" id="3nb-P9-hMw"/>
+                                            <constraint firstItem="vk8-3O-PGG" firstAttribute="top" secondItem="LO6-CA-Iyu" secondAttribute="top" constant="-64" id="3nb-P9-hMw"/>
                                             <constraint firstItem="vk8-3O-PGG" firstAttribute="leading" secondItem="LO6-CA-Iyu" secondAttribute="leading" id="6XB-B3-pWH"/>
                                             <constraint firstItem="wny-25-kvc" firstAttribute="leading" secondItem="ZBD-uw-zcu" secondAttribute="leading" id="7U1-pI-DKe"/>
                                             <constraint firstItem="0wc-YM-T3j" firstAttribute="top" secondItem="qHn-mj-tKC" secondAttribute="bottom" constant="16" id="8ex-X5-oJk"/>
@@ -820,7 +820,6 @@ SE1 0NQ</string>
                                             <constraint firstItem="60w-cG-0Di" firstAttribute="top" secondItem="Y8o-Ag-0vJ" secondAttribute="bottom" constant="16" id="qsW-E1-1WE"/>
                                             <constraint firstItem="0wc-YM-T3j" firstAttribute="leading" secondItem="ZBD-uw-zcu" secondAttribute="leading" id="sSI-CK-YA2"/>
                                             <constraint firstItem="age-mn-Pff" firstAttribute="leading" secondItem="ZBD-uw-zcu" secondAttribute="leading" id="tVw-nz-ZQ6"/>
-                                            <constraint firstItem="vk8-3O-PGG" firstAttribute="top" secondItem="LO6-CA-Iyu" secondAttribute="top" constant="-50" id="w4e-Dt-E4i"/>
                                             <constraint firstAttribute="trailing" secondItem="ZBD-uw-zcu" secondAttribute="trailing" constant="16" id="wEf-2U-8SQ"/>
                                             <constraint firstItem="age-mn-Pff" firstAttribute="top" secondItem="60w-cG-0Di" secondAttribute="bottom" constant="16" id="xeL-e1-8D0"/>
                                             <constraint firstItem="60w-cG-0Di" firstAttribute="trailing" secondItem="ZBD-uw-zcu" secondAttribute="trailing" id="yrh-GL-8Vh"/>
@@ -839,7 +838,7 @@ SE1 0NQ</string>
                         <constraints>
                             <constraint firstItem="1bV-B8-9jY" firstAttribute="leading" secondItem="G6m-1g-XtT" secondAttribute="leading" id="4eH-Ye-HoR"/>
                             <constraint firstItem="1bV-B8-9jY" firstAttribute="bottom" secondItem="G6m-1g-XtT" secondAttribute="bottom" id="aoN-XE-HEI"/>
-                            <constraint firstItem="1bV-B8-9jY" firstAttribute="top" secondItem="G6m-1g-XtT" secondAttribute="top" constant="-44" id="nR8-Ag-TDb"/>
+                            <constraint firstItem="1bV-B8-9jY" firstAttribute="top" secondItem="QA3-dX-mBh" secondAttribute="top" id="nR8-Ag-TDb"/>
                             <constraint firstItem="1bV-B8-9jY" firstAttribute="trailing" secondItem="G6m-1g-XtT" secondAttribute="trailing" id="qrV-va-iyd"/>
                             <constraint firstItem="LO6-CA-Iyu" firstAttribute="width" secondItem="QA3-dX-mBh" secondAttribute="width" id="tJU-Lb-to9"/>
                         </constraints>
@@ -950,7 +949,7 @@ SE1 0NQ</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="US0-82-nEu" kind="show" id="pgK-X7-tga"/>
+                                    <action selector="filterBTN:" destination="yZv-7y-ld8" eventType="touchUpInside" id="BGJ-oV-ajo"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="Brn-Oh-yyb">
@@ -1003,6 +1002,7 @@ SE1 0NQ</string>
                     <connections>
                         <outlet property="catTF" destination="qb0-V4-cK0" id="WqR-GD-ca8"/>
                         <outlet property="rate" destination="AV0-RF-UTc" id="knr-jB-8GN"/>
+                        <segue destination="US0-82-nEu" kind="show" identifier="suge" id="fiH-9R-ZUI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxi-yG-iXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2093,7 +2093,7 @@ SE1 0NQ</string>
         <image name="twitter" width="159" height="159"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pgK-X7-tga"/>
-        <segue reference="nMv-VV-4sT"/>
+        <segue reference="fiH-9R-ZUI"/>
+        <segue reference="Sp1-VH-4M7"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -27,6 +27,7 @@ struct URLs {
     static let similarProducts = main + "similarProducts"
     static let social_links = main + "social_links"
     static let search = main + "search"
+    static let subcategoryFilterWithrate = main + "subcategory"
     
     
 }

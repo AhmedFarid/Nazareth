@@ -55,13 +55,14 @@ class subCatVC: UIViewController {
     }
     
     @IBAction func fileterBTN(_ sender: Any) {
-        performSegue(withIdentifier: "suge", sender: nil)
+        performSegue(withIdentifier: "suge2", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destaiantion = segue.destination as? prodectDetialsVC{
             destaiantion.singleItem = sender as? prodectData
         }else if let destaintion = segue.destination as? filterVC{
-            destaintion.singleItem = sender as? homeData
+            destaintion.catIdFromSuge = singleItem?.id ?? 0
+            
         }
     }
     
