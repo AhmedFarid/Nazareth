@@ -32,35 +32,39 @@ class setReviewVC: UIViewController {
          @IBAction func sendBTN(_ sender: Any) {
              guard let names = nameTF.text, !names.isEmpty else {
                  let messages = NSLocalizedString("enter your name", comment: "hhhh")
-                 let title = NSLocalizedString("Register Filed", comment: "hhhh")
+                 let title = NSLocalizedString("Review Filed", comment: "hhhh")
                  self.showAlert(title: title, message: messages)
                  return
              }
             
-            guard let comment = commentTF.text, !comment.isEmpty else {
-                let messages = NSLocalizedString("enter your comment", comment: "hhhh")
-                let title = NSLocalizedString("Register Filed", comment: "hhhh")
-                self.showAlert(title: title, message: messages)
-                return
-            }
-             
-             
              guard let emails = emailTF.text, !emails.isEmpty else {
                  let messages = NSLocalizedString("enter your Email", comment: "hhhh")
-                 let title = NSLocalizedString("Register Filed", comment: "hhhh")
+                 let title = NSLocalizedString("Review Filed", comment: "hhhh")
                  self.showAlert(title: title, message: messages)
                  return
              }
              
-             if isValidEmail(testStr: emails) == false {
+             guard isValidEmail(testStr: emails) == true else {
                  let messages = NSLocalizedString("email not correct", comment: "hhhh")
-                 let title = NSLocalizedString("Register Filed", comment: "hhhh")
+                 let title = NSLocalizedString("Review Filed", comment: "hhhh")
                  self.showAlert(title: title, message: messages)
+                return
              }
              
-             
-            Api_menu.setReview(review: Int(stars.rating), product_id: singleItem?.id ?? 0, name: names, email: emails, comment: comment){ (error: Error?, data) in
-                 self.showAlert(title: "Contact us", message: data ?? "")
+             guard let comment = commentTF.text, !comment.isEmpty else {
+                            let messages = NSLocalizedString("enter your comment", comment: "hhhh")
+                            let title = NSLocalizedString("Review Filed", comment: "hhhh")
+                            self.showAlert(title: title, message: messages)
+                            return
+            }
+            
+            Api_menu.setReview(review: Int(stars.rating), product_id: singleItem?.id ?? 0, name: names, email: emails, comment: comment){ (error: Error?, data,message) in
+                let alert = UIAlertController(title: "Review", message: "\(data ?? "") \(message ?? "")", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .destructive, handler: { (action: UIAlertAction) in
+                    _ = self.navigationController?.popViewController(animated: true)
+                    //self.dismiss(animated: true, completion: nil)
+                }))
+                self.present(alert, animated: true, completion: nil)
              }
          }
          

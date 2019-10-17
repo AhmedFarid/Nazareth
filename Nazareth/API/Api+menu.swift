@@ -108,7 +108,7 @@ class Api_menu: NSObject {
         }
     }
     
-    class func setReview(review: Int,product_id: Int,name: String,email: String,comment: String,completion: @escaping (_ error: Error?,_ data: String?)-> Void) {
+    class func setReview(review: Int,product_id: Int,name: String,email: String,comment: String,completion: @escaping (_ error: Error?,_ data: String?,_ message: String?)-> Void) {
         
         let url = URLs.setReview
         let lang = NSLocalizedString("en", comment: "profuct list lang")
@@ -129,14 +129,14 @@ class Api_menu: NSObject {
             switch response.result
             {
             case .failure(let error):
-                completion(error, nil)
+                completion(error, nil,nil)
                 print(error)
                 
             case .success(let value):
                 print(value)
                 let json = JSON(value)
-                if let data = json["message"].string {
-                    completion(nil, data)
+                if let data = json["data"].string , let message = json["message"].string{
+                    completion(nil, data,message)
                 }
                 
             }

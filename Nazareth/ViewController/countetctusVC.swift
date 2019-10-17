@@ -31,34 +31,46 @@ class countetctusVC: UIViewController {
     @IBAction func sendBTN(_ sender: Any) {
         guard let names = nameTF.text, !names.isEmpty else {
             let messages = NSLocalizedString("enter your name", comment: "hhhh")
-            let title = NSLocalizedString("Register Filed", comment: "hhhh")
+            let title = NSLocalizedString("Contact us filed", comment: "hhhh")
             self.showAlert(title: title, message: messages)
             return
         }
         
         guard let phones = phoneTF.text, !phones.isEmpty else {
             let messages = NSLocalizedString("enter your phone", comment: "hhhh")
-            let title = NSLocalizedString("Register Filed", comment: "hhhh")
+            let title = NSLocalizedString("Contact us filed", comment: "hhhh")
             self.showAlert(title: title, message: messages)
             return
         }
         
         guard let emails = emalTF.text, !emails.isEmpty else {
             let messages = NSLocalizedString("enter your Email", comment: "hhhh")
-            let title = NSLocalizedString("Register Filed", comment: "hhhh")
+            let title = NSLocalizedString("Contact us filed", comment: "hhhh")
             self.showAlert(title: title, message: messages)
             return
         }
         
         if isValidEmail(testStr: emails) == false {
             let messages = NSLocalizedString("email not correct", comment: "hhhh")
-            let title = NSLocalizedString("Register Filed", comment: "hhhh")
+            let title = NSLocalizedString("Contact us filed", comment: "hhhh")
             self.showAlert(title: title, message: messages)
         }
         
+        guard let messages = meassage.text, !messages.isEmpty else {
+            let messages = NSLocalizedString("enter your message", comment: "hhhh")
+            let title = NSLocalizedString("Contact us filed", comment: "hhhh")
+            self.showAlert(title: title, message: messages)
+            return
+        }
         
         Api_menu.sendMessage(name: nameTF.text ?? "", phone: phoneTF.text ?? "", email: emails, message: meassage.text ?? "") { (error: Error?, data) in
-            self.showAlert(title: "Contact us", message: data ?? "")
+            let alert = UIAlertController(title: "Contact us", message: data ?? "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .destructive, handler: { (action: UIAlertAction) in
+                _ = self.navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
         }
     }
     

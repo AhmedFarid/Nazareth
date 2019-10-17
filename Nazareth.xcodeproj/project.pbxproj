@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -231,8 +231,8 @@
 		69C33935234609AB0062640E /* events */ = {
 			isa = PBXGroup;
 			children = (
-				693C1A8F2345021A008F7688 /* eventsVC.swift */,
 				69C33936234609D60062640E /* eventsDetialsVC.swift */,
+				693C1A8F2345021A008F7688 /* eventsVC.swift */,
 			);
 			path = events;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 				};
 			};
 			buildConfigurationList = 69A1C0B12312A723009F399E /* Build configuration list for PBXProject "Nazareth" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -583,6 +583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = Nazareth/Info.plist;
@@ -591,8 +592,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.farido.Ebakers.Nazareth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ebakers.Nazareth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Nazareth/SWReveal/Nazareth-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -606,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = Nazareth/Info.plist;
@@ -614,8 +617,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.farido.Ebakers.Nazareth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ebakers.Nazareth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Nazareth/SWReveal/Nazareth-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
