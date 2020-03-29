@@ -12,6 +12,7 @@ PODS:
   - Kingfisher (5.8.2):
     - Kingfisher/Core (= 5.8.2)
   - Kingfisher/Core (5.8.2)
+  - MOLH (1.1.2)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -21,16 +22,18 @@ DEPENDENCIES:
   - GooglePlaces
   - IQKeyboardManagerSwift
   - Kingfisher
+  - MOLH
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - Cosmos
     - GoogleMaps
     - GooglePlaces
     - IQKeyboardManagerSwift
     - Kingfisher
+    - MOLH
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -40,8 +43,9 @@ SPEC CHECKSUMS:
   GooglePlaces: 7547289e3fffc8980f4a027be99888e29d59b15d
   IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
   Kingfisher: 3adc15096595f5aed800bb0d5cb757fc58b2d2dd
+  MOLH: 79723d6938aff0ac02aebe4d89cc96b73f46fa32
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: cc278df80ace2b7e2f40268d63eb667fccd60744
+PODFILE CHECKSUM: 325b224a48aeadcadbec5d613ac0196091f26c4e
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.8.4

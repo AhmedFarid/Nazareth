@@ -13,6 +13,7 @@ class homeCell: UITableViewCell {
 
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var catName: UILabel!
+    @IBOutlet weak var viewColor: UIView!
     
     
     override func awakeFromNib() {

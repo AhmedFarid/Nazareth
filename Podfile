@@ -15,6 +15,7 @@ target 'Nazareth' do
   pod 'Cosmos', '~> 19.0'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'MOLH'
   
   
    

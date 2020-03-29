@@ -27,6 +27,10 @@ class aboutUsVC: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        setUpProfile()
+    }
+    
     func setUpProfile(){
         Api_menu.profile { (error: Error?, success: Bool, title,short_description,description)  in
             if success {

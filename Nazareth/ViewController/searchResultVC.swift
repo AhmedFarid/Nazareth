@@ -23,6 +23,10 @@ class searchResultVC: UIViewController {
         getdataFromFilter()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getdataFromFilter()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destaiantion = segue.destination as? prodectDetialsVC{
             destaiantion.singleItem = sender as? prodectData

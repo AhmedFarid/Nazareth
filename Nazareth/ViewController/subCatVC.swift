@@ -14,12 +14,16 @@ class subCatVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewProdects: UICollectionView!
     
+    
+    var refreshControl = UIRefreshControl()
     var singleItem: homeData?
     var subCat = [subCatData]()
     var prodects = [prodectData]()
+    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "\(singleItem?.name ?? "")"
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionViewProdects.delegate = self
@@ -28,8 +32,23 @@ class subCatVC: UIViewController {
         //collectionViewProdects.dropShadow()
         handleRefreshgetSubCat()
         catDES.text = singleItem?.descript
+        
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+        collectionViewProdects.refreshControl = refreshControl
     }//
     
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handleRefreshgetProdects(subID: index)
+        print(index)
+    }
+    
+    
+    @objc func refresh(sender:AnyObject) {
+        handleRefreshgetProdects(subID: index)
+        refreshControl.endRefreshing()
+    }
     
     @objc private func handleRefreshgetSubCat() {
         API_Home.SubCategories(category_id: singleItem?.id ?? 0){(error: Error?, subCat: [subCatData]?) in
@@ -140,6 +159,7 @@ extension subCatVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 0 {
             handleRefreshgetProdects(subID: subCat[indexPath.row].id)
+            index = subCat[indexPath.row].id
         }else{
             performSegue(withIdentifier: "suge", sender: prodects[indexPath.row])
         }

@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import MOLH
 
 class homeVC: UIViewController {
     
     @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    
     var cat = [homeData]()
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+        tableView.refreshControl = refreshControl
+        
+        
         searchTF.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -28,6 +36,17 @@ class homeVC: UIViewController {
         
         handleRefreshgetCat()
         
+    }
+    
+    @objc func refresh(sender:AnyObject) {
+         handleRefreshgetCat()
+        refreshControl.endRefreshing()
+        
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handleRefreshgetCat()
     }
     
     @objc private func handleRefreshgetCat() {
@@ -45,16 +64,22 @@ class homeVC: UIViewController {
     }
     
     @IBAction func sideMenuBTN(_ sender: Any) {
-        if let vc = self.revealViewController() {
-            vc.revealToggle(animated: true)
-            //self.view.addGestureRecognizer(vc.panGestureRecognizer())
-            self.view.addGestureRecognizer(vc.tapGestureRecognizer())
-            vc.rearViewRevealWidth = screenWidth - 60
-            
-            //        revealViewController().rightViewRevealWidth = kWIDTH
-            //        revealViewController().frontViewPosition =
-            
-            
+        if MOLHLanguage.currentAppleLanguage() == "en"{
+            if let vc = self.revealViewController() {
+                vc.revealToggle(animated: true)
+                self.view.addGestureRecognizer(vc.tapGestureRecognizer())
+                vc.rearViewRevealWidth = screenWidth - 60
+            }else {
+                
+            }
+        }else {
+            if let vc = self.revealViewController() {
+                vc.rightRevealToggle(animated: true)
+                self.view.addGestureRecognizer(vc.tapGestureRecognizer())
+                vc.rightViewRevealWidth = screenWidth - 60
+            }else {
+                
+            }
         }
     }
     
@@ -87,9 +112,24 @@ extension homeVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? homeCell{
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
-            
             let cats = cat[indexPath.row]
             cell.configuerCell(prodect: cats)
+            
+            if cats.id == 2 { //Restaurants
+                cell.viewColor.backgroundColor = #colorLiteral(red: 0.03529411765, green: 0.3607843137, blue: 0.6470588235, alpha: 0.77)
+            }else if cats.id == 3 { //Accommodation
+                cell.viewColor.backgroundColor = #colorLiteral(red: 0.5411764706, green: 0.09411764706, blue: 0.5568627451, alpha: 0.77)
+            }else if cats.id == 4 { //Transportation
+                cell.viewColor.backgroundColor = #colorLiteral(red: 0.03921568627, green: 0.5176470588, blue: 0.3568627451, alpha: 0.77)
+            }else if cats.id == 5 { //Entertainment
+                cell.viewColor.backgroundColor = #colorLiteral(red: 0.4823529412, green: 0.2901960784, blue: 0.03921568627, alpha: 0.77)
+            }else if cats.id == 19 { //Hospital
+                cell.viewColor.backgroundColor = #colorLiteral(red: 0.5411764706, green: 0.09411764706, blue: 0.5568627451, alpha: 0.77)
+            }else if cats.id == 20 { //Emergency
+                cell.viewColor.backgroundColor = #colorLiteral(red: 0.03921568627, green: 0.5176470588, blue: 0.3568627451, alpha: 0.77)
+            }else if cats.id == 13 { //Attractions
+                cell.viewColor.backgroundColor = #colorLiteral(red: 0.1450980392, green: 0.3607843137, blue: 0.7882352941, alpha: 0.77)
+            }
             return cell
         }else {
             return homeCell()
@@ -124,10 +164,11 @@ extension homeVC: UITableViewDelegate,UITableViewDataSource {
 extension homeVC: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
-
         textField.resignFirstResponder()  //if desired
         performSegue(withIdentifier: "suge1", sender: nil)
         return true
     }
 }
+
+
+

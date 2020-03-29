@@ -11,6 +11,7 @@ import UIKit
 class ArticlesVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var articals = [event]()
     
     override func viewDidLoad() {
@@ -26,6 +27,10 @@ class ArticlesVC: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         
+        handleRefreshgetEvents()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         handleRefreshgetEvents()
     }
     

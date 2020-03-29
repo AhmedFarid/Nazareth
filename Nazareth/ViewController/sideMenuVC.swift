@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 class sideMenuVC: UIViewController {
 
@@ -28,6 +29,10 @@ class sideMenuVC: UIViewController {
         getLinks()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getLinks()
+    }
+    
     
     func getLinks() {
         Api_menu.social_links { (error, success, facebook, youtub, twitter, instagram, snapchat, linkedin) in
@@ -41,7 +46,42 @@ class sideMenuVC: UIViewController {
         }
     }
 
-     @IBAction func artcilesBTN(_ sender: Any) {
+    @IBAction func langBTN(_ sender: Any) {
+        let alert = UIAlertController(title: NSLocalizedString("Select Language", comment: ""), message: "", preferredStyle: .actionSheet)
+        if MOLHLanguage.currentAppleLanguage() == "en"{
+            alert.addAction(UIAlertAction(title: "עברית", style: .destructive, handler: { (action: UIAlertAction) in
+                MOLH.setLanguageTo("he")
+                MOLH.reset()
+            }))
+            alert.addAction(UIAlertAction(title: "عربى", style: .destructive, handler: { (action: UIAlertAction) in
+                MOLH.setLanguageTo("ar")
+                MOLH.reset()
+            }))
+        }else if MOLHLanguage.currentAppleLanguage() == "ar"{
+            alert.addAction(UIAlertAction(title: "English", style: .destructive, handler: { (action: UIAlertAction) in
+                MOLH.setLanguageTo("en")
+                MOLH.reset()
+            }))
+            alert.addAction(UIAlertAction(title: "עברית", style: .destructive, handler: { (action: UIAlertAction) in
+                MOLH.setLanguageTo("he")
+                MOLH.reset()
+            }))
+        }else if MOLHLanguage.currentAppleLanguage() == "he"{
+            alert.addAction(UIAlertAction(title: "English", style: .destructive, handler: { (action: UIAlertAction) in
+                MOLH.setLanguageTo("en")
+                MOLH.reset()
+            }))
+            alert.addAction(UIAlertAction(title: "عربى", style: .destructive, handler: { (action: UIAlertAction) in
+                MOLH.setLanguageTo("ar")
+                MOLH.reset()
+            }))
+        }
+        
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func artcilesBTN(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "articl") as! ArticlesVC
         let navigationController = UINavigationController(rootViewController: vc)
         navigationController.modalPresentationStyle = .fullScreen

@@ -22,9 +22,15 @@ class reviwesVC: UIViewController {
     @IBOutlet weak var prodectCollection: UICollectionView!
     @IBOutlet weak var nameTF: UILabel!
     @IBOutlet weak var avgPebleLbl: UILabel!
+    @IBOutlet weak var SCROLL: UIScrollView!
+    
+     var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+               SCROLL.refreshControl = refreshControl
         reviewTable.delegate = self
         reviewTable.dataSource = self
         prodectCollection.delegate = self
@@ -34,6 +40,18 @@ class reviwesVC: UIViewController {
         setUpView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        handleRefreshgetProdectsImage()
+        handleRefreshgetComments()
+        setUpView()
+    }
+    
+    @objc func refresh(sender:AnyObject) {
+           handleRefreshgetProdectsImage()
+           handleRefreshgetComments()
+           setUpView()
+           refreshControl.endRefreshing()
+       }
     
     @objc private func handleRefreshgetProdectsImage() {
         API_Home.prodectIamges(type_id: singleItem?.id ?? 0){(error: Error?, images: [prodectImages]?) in
@@ -58,7 +76,8 @@ class reviwesVC: UIViewController {
     
     func setUpView(){
         totalReat.rating = singleItem?.average_rating ?? 0.0
-        avgPebleLbl.text = "(\(singleItem?.total_rate ?? 0) person review)"
+        let personReview = NSLocalizedString("person review", comment: "hhhh")
+        avgPebleLbl.text = "(\(singleItem?.total_rate ?? 0) \(personReview))"
         nameTF.text = singleItem?.name
         img.image = UIImage(named: "3")
         let s = singleItem?.image

@@ -20,6 +20,7 @@ class API_Home: NSObject {
         let headers = [
             "X-localization": lang
         ]
+        print(headers)
         
         Alamofire.request(url, method: .post, parameters: nil, encoding: URLEncoding.default, headers: headers) .responseJSON  { response in
             switch response.result

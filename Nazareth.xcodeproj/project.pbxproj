@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		58E317CE23563D2EFFCCD25D /* Pods_Nazareth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84051EE62F81AA1153624FF /* Pods_Nazareth.framework */; };
 		690044702316D3FB0097F563 /* ArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6900446F2316D3FB0097F563 /* ArticlesVC.swift */; };
+		691576942361CF0900CFDA4F /* imagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691576932361CF0900CFDA4F /* imagesVC.swift */; };
+		691576962361D40000CFDA4F /* bigimageViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691576952361D40000CFDA4F /* bigimageViewerCell.swift */; };
 		691A0DC72312ED8400EED080 /* allProdectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A0DC62312ED8400EED080 /* allProdectCell.swift */; };
+		692D1D5823659EC700708D58 /* shadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D1D5723659EC700708D58 /* shadowView.swift */; };
 		693C1A8E2344FC48008F7688 /* Api+menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C1A8D2344FC48008F7688 /* Api+menu.swift */; };
 		693C1A902345021A008F7688 /* eventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C1A8F2345021A008F7688 /* eventsVC.swift */; };
+		695986B72430D40300C051E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 695986B52430D40300C051E7 /* Localizable.strings */; };
 		69610B752337725D005A4ABB /* Cofig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69610B742337725D005A4ABB /* Cofig.swift */; };
 		69610B78233775B1005A4ABB /* homeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69610B77233775B1005A4ABB /* homeData.swift */; };
 		69610B7B23377689005A4ABB /* API+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69610B7A23377689005A4ABB /* API+Home.swift */; };
@@ -43,13 +47,22 @@
 		69E4F56523157773001F7409 /* reviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F56423157773001F7409 /* reviewCell.swift */; };
 		69E4F56723157AFD001F7409 /* searchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F56623157AFD001F7409 /* searchResultVC.swift */; };
 		69E4F56923157B52001F7409 /* searchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F56823157B52001F7409 /* searchResultCell.swift */; };
+		69F68ABF2430E60B00A070B2 /* rightSIdeMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F68ABE2430E60B00A070B2 /* rightSIdeMenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6900446F2316D3FB0097F563 /* ArticlesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVC.swift; sourceTree = "<group>"; };
+		691576932361CF0900CFDA4F /* imagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesVC.swift; sourceTree = "<group>"; };
+		691576952361D40000CFDA4F /* bigimageViewerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigimageViewerCell.swift; sourceTree = "<group>"; };
 		691A0DC62312ED8400EED080 /* allProdectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allProdectCell.swift; sourceTree = "<group>"; };
+		692D1D5723659EC700708D58 /* shadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shadowView.swift; sourceTree = "<group>"; };
 		693C1A8D2344FC48008F7688 /* Api+menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+menu.swift"; sourceTree = "<group>"; };
 		693C1A8F2345021A008F7688 /* eventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsVC.swift; sourceTree = "<group>"; };
+		695986B12430CBDA00C051E7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		695986B22430CBDD00C051E7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		695986B32430CBF700C051E7 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		695986B42430CBF800C051E7 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		695986B62430D40300C051E7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		69610B742337725D005A4ABB /* Cofig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cofig.swift; sourceTree = "<group>"; };
 		69610B77233775B1005A4ABB /* homeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeData.swift; sourceTree = "<group>"; };
 		69610B7A23377689005A4ABB /* API+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Home.swift"; sourceTree = "<group>"; };
@@ -85,6 +98,8 @@
 		69E4F56423157773001F7409 /* reviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewCell.swift; sourceTree = "<group>"; };
 		69E4F56623157AFD001F7409 /* searchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultVC.swift; sourceTree = "<group>"; };
 		69E4F56823157B52001F7409 /* searchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultCell.swift; sourceTree = "<group>"; };
+		69F68ABE2430E60B00A070B2 /* rightSIdeMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightSIdeMenuVC.swift; sourceTree = "<group>"; };
+		69F68AC02430FEA200A070B2 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		71ECEDE92E468B4C8168D513 /* Pods-Nazareth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nazareth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth.debug.xcconfig"; sourceTree = "<group>"; };
 		A84051EE62F81AA1153624FF /* Pods_Nazareth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nazareth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6012A4865E3FB20FF9A48D /* Pods-Nazareth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nazareth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +195,7 @@
 				69A1C0C02312A725009F399E /* Assets.xcassets */,
 				69A1C0C22312A725009F399E /* LaunchScreen.storyboard */,
 				69A1C0C52312A725009F399E /* Info.plist */,
+				695986B52430D40300C051E7 /* Localizable.strings */,
 			);
 			path = Nazareth;
 			sourceTree = "<group>";
@@ -194,12 +210,14 @@
 				69E4F5622315742E001F7409 /* reviwesVC.swift */,
 				698F8197234B737700B88930 /* setReviewVC.swift */,
 				69E4F56623157AFD001F7409 /* searchResultVC.swift */,
+				69F68ABE2430E60B00A070B2 /* rightSIdeMenuVC.swift */,
 				696882222316B2FC00D6BF10 /* sideMenuVC.swift */,
 				69AD9A052337C9B100BE7930 /* mapVC.swift */,
 				69C3393823461CE30062640E /* Articles */,
 				69C33935234609AB0062640E /* events */,
 				69D9142723462CFC00ECE450 /* aboutUsVC.swift */,
 				69D9142B2346372900ECE450 /* countetctusVC.swift */,
+				691576932361CF0900CFDA4F /* imagesVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -210,6 +228,7 @@
 				69A1C0CD2312B3E7009F399E /* reondedTF.swift */,
 				69E4F55E23154D07001F7409 /* roundedBtn.swift */,
 				69D914292346361000ECE450 /* messageTV.swift */,
+				692D1D5723659EC700708D58 /* shadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,6 +243,7 @@
 				69E4F56423157773001F7409 /* reviewCell.swift */,
 				69E4F56823157B52001F7409 /* searchResultCell.swift */,
 				69C339332346050F0062640E /* eventsCell.swift */,
+				691576952361D40000CFDA4F /* bigimageViewerCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -308,6 +328,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				he,
 			);
 			mainGroup = 69A1C0AD2312A723009F399E;
 			productRefGroup = 69A1C0B72312A723009F399E /* Products */;
@@ -325,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A1C0C42312A725009F399E /* LaunchScreen.storyboard in Resources */,
+				695986B72430D40300C051E7 /* Localizable.strings in Resources */,
 				69A1C0C12312A725009F399E /* Assets.xcassets in Resources */,
 				69A1C0BF2312A723009F399E /* Main.storyboard in Resources */,
 			);
@@ -338,25 +361,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nazareth/Pods-Nazareth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nazareth/Pods-Nazareth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nazareth/Pods-Nazareth-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		54BB7BF24E209AEE8F1D44DD /* [CP] Copy Pods Resources */ = {
@@ -364,19 +378,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nazareth/Pods-Nazareth-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nazareth/Pods-Nazareth-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nazareth/Pods-Nazareth-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nazareth/Pods-Nazareth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE774BD78E244F1CB8A55FBD /* [CP] Check Pods Manifest.lock */ = {
@@ -406,6 +417,7 @@
 			files = (
 				69E4F561231566E1001F7409 /* filterVC.swift in Sources */,
 				696882232316B2FC00D6BF10 /* sideMenuVC.swift in Sources */,
+				691576942361CF0900CFDA4F /* imagesVC.swift in Sources */,
 				69D9142823462CFC00ECE450 /* aboutUsVC.swift in Sources */,
 				698F8198234B737700B88930 /* setReviewVC.swift in Sources */,
 				69610B7B23377689005A4ABB /* API+Home.swift in Sources */,
@@ -427,6 +439,9 @@
 				69E4F5632315742E001F7409 /* reviwesVC.swift in Sources */,
 				69A251912312C0AB00396498 /* homeCell.swift in Sources */,
 				69C339342346050F0062640E /* eventsCell.swift in Sources */,
+				692D1D5823659EC700708D58 /* shadowView.swift in Sources */,
+				69F68ABF2430E60B00A070B2 /* rightSIdeMenuVC.swift in Sources */,
+				691576962361D40000CFDA4F /* bigimageViewerCell.swift in Sources */,
 				696882212316ACCB00D6BF10 /* SWRevealViewController.m in Sources */,
 				69E4F55F23154D07001F7409 /* roundedBtn.swift in Sources */,
 				69E4F56723157AFD001F7409 /* searchResultVC.swift in Sources */,
@@ -442,10 +457,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		695986B52430D40300C051E7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				695986B62430D40300C051E7 /* ar */,
+				69F68AC02430FEA200A070B2 /* he */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		69A1C0BD2312A723009F399E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				69A1C0BE2312A723009F399E /* Base */,
+				695986B12430CBDA00C051E7 /* ar */,
+				695986B32430CBF700C051E7 /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -454,6 +480,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				69A1C0C32312A725009F399E /* Base */,
+				695986B22430CBDD00C051E7 /* ar */,
+				695986B42430CBF800C051E7 /* he */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -465,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -526,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -585,6 +615,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = Nazareth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -610,6 +641,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = Nazareth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

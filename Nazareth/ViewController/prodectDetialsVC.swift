@@ -23,12 +23,21 @@ class prodectDetialsVC: UIViewController {
     @IBOutlet weak var addressTF: UILabel!
     @IBOutlet weak var addressTitle: UILabel!
     
+    var refreshControl = UIRefreshControl()
+    
     var singleItem: prodectData?
     var images = [prodectImages]()
     var simares = [prodectData]()
     
+    var index = Int()
+    var currentIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+        scrollView.refreshControl = refreshControl
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         similarCollectionView.delegate = self
@@ -38,6 +47,18 @@ class prodectDetialsVC: UIViewController {
         handleRefreshgetSimelerProdects(prodectID: singleItem?.id ?? 0)
         //collectionView.dropShadow()
 
+    }
+    
+    @objc func refresh(sender:AnyObject) {
+        setUpView()
+        handleRefreshgetProdectsImage()
+        handleRefreshgetSimelerProdects(prodectID: singleItem?.id ?? 0)
+        refreshControl.endRefreshing()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handleRefreshgetProdectsImage()
+        handleRefreshgetSimelerProdects(prodectID: singleItem?.id ?? 0)
     }
     
     @objc private func handleRefreshgetSimelerProdects(prodectID: Int) {
@@ -64,12 +85,16 @@ class prodectDetialsVC: UIViewController {
     
     func setUpView(){
         totalReat.rating = singleItem?.average_rating ?? 0.0
-        avgPebleLbl.text = "(\(singleItem?.total_rate ?? 0) person review)"
+        let personReview = NSLocalizedString("person review", comment: "profuct list lang")
+        avgPebleLbl.text = "(\(singleItem?.total_rate ?? 0) \(personReview))"
         titelTF.text = singleItem?.name
         dec.text = singleItem?.descript
         addressTF.text = singleItem?.address
-        addressTitle.text = "Where The \(singleItem?.name ?? "") Are"
-        simallerCat.text = "Similar \(singleItem?.name ?? "")"
+        let whereThe = NSLocalizedString("Where The", comment: "profuct list lang")
+        let are = NSLocalizedString("Are", comment: "profuct list lang")
+        addressTitle.text = "\(whereThe) \(singleItem?.name ?? "") \(are)"
+        let similar = NSLocalizedString("Similar", comment: "profuct list lang")
+        simallerCat.text = "\(similar) \(singleItem?.name ?? "")"
         
         img.image = UIImage(named: "3")
         let s = singleItem?.image
@@ -94,6 +119,10 @@ class prodectDetialsVC: UIViewController {
             destaiantion.singleItem = singleItem
         }else if let destaiantion = segue.destination as? reviwesVC{
             destaiantion.singleItem = singleItem
+        }else if let destaiantion = segue.destination as? imagesVC {
+            //destenation.productID = self.id
+            destaiantion.image = self.images
+            destaiantion.index = self.index
         }
     }
     
@@ -142,7 +171,8 @@ extension prodectDetialsVC: UICollectionViewDelegate,UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 0 {
-            print("xx")
+            self.index = indexPath.item
+            performSegue(withIdentifier: "sugeImges", sender: nil)
         }else{
             singleItem = simares[indexPath.row]
             setUpView()

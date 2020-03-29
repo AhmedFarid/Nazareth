@@ -23,6 +23,10 @@ class articlesDtitlesVC: UIViewController {
         setUpView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setUpView()
+    }
+    
 
     func setUpView(){
         

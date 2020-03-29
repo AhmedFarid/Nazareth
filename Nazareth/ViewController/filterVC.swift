@@ -25,6 +25,10 @@ class filterVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        createCatsPiker()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destaiantion = segue.destination as? searchResultVC{
             destaiantion.catsID = catsId
@@ -51,8 +55,8 @@ class filterVC: UIViewController {
         //Customizations
         toolBar.barTintColor = .black
         toolBar.tintColor = .white
-        
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(filterVC.dismissKeyboard))
+        let done = NSLocalizedString("Done", comment: "profuct list lang")
+        let doneButton = UIBarButtonItem(title: done, style: .plain, target: self, action: #selector(filterVC.dismissKeyboard))
         
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true

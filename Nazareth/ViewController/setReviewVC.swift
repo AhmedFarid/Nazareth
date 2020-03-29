@@ -17,6 +17,8 @@ class setReviewVC: UIViewController {
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var commentTF: messageTV!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nav = self.navigationController?.navigationBar
@@ -27,6 +29,8 @@ class setReviewVC: UIViewController {
              self.navigationController?.navigationBar.shadowImage = UIImage()
              self.navigationController?.navigationBar.isTranslucent = true
          }
+    
+    
          
          
          @IBAction func sendBTN(_ sender: Any) {

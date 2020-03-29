@@ -30,6 +30,10 @@ class eventsVC: UIViewController {
         handleRefreshgetEvents()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        handleRefreshgetEvents()
+    }
+    
     @objc private func handleRefreshgetEvents() {
         Api_menu.evants(url: URLs.events){(error: Error?, events: [event]?) in
             if let events = events {

@@ -12,7 +12,7 @@ import Foundation
 struct URLs {
     
     
-    static let main = "http://technologybakers.org/api/"
+    static let main = "https://visitnazareth.co.il/api/"
     
     static let categories = main + "categories"
     static let subcategories = main + "subcategories"
