@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Nazareth/Base.lproj/Main.storyboard" source-language="en" target-language="he" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.2.1" build-num="11B500"/>
+    </header>
+    <body>
+      <trans-unit id="0wc-YM-T3j.normalTitle" xml:space="preserve">
+        <source>   Open Location On Google Map</source>
+        <target>   Open Location On Google Map</target>
+        <note>Class = "UIButton"; normalTitle = "   Open Location On Google Map"; ObjectID = "0wc-YM-T3j";</note>
+      </trans-unit>
+      <trans-unit id="2Ls-8R-FWj.text" xml:space="preserve">
+        <source>Best food and drink in Nazareth</source>
+        <target>Best food and drink in Nazareth</target>
+        <note>Class = "UILabel"; text = "Best food and drink in Nazareth"; ObjectID = "2Ls-8R-FWj";</note>
+      </trans-unit>
+      <trans-unit id="3SN-nZ-qeX.title" xml:space="preserve">
+        <source>Events</source>
+        <target>Events</target>
+        <note>Class = "UINavigationItem"; title = "Events"; ObjectID = "3SN-nZ-qeX";</note>
+      </trans-unit>
+      <trans-unit id="3mT-i1-yQQ.text" xml:space="preserve">
+        <source>(250 person review)</source>
+        <target>(250 person review)</target>
+        <note>Class = "UILabel"; text = "(250 person review)"; ObjectID = "3mT-i1-yQQ";</note>
+      </trans-unit>
+      <trans-unit id="3qM-j9-2Xw.text" xml:space="preserve">
+        <source>namenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamena</source>
+        <target>namenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamena</target>
+        <note>Class = "UILabel"; text = "namenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamenanamenamenamenamenamenamenamenamena"; ObjectID = "3qM-j9-2Xw";</note>
+      </trans-unit>
+      <trans-unit id="4FF-ie-6a4.title" xml:space="preserve">
+        <source>Review</source>
+        <target>Review</target>
+        <note>Class = "UINavigationItem"; title = "Review"; ObjectID = "4FF-ie-6a4";</note>
+      </trans-unit>
+      <trans-unit id="4YM-oB-nQb.text" xml:space="preserve">
+        <source>namenamenamenamenamenamenamenamena</source>
+        <target>namenamenamenamenamenamenamenamena</target>
+        <note>Class = "UILabel"; text = "namenamenamenamenamenamenamenamena"; ObjectID = "4YM-oB-nQb";</note>
+      </trans-unit>
+      <trans-unit id="4nQ-Va-itJ.title" xml:space="preserve">
+        <source>title</source>
+        <target>title</target>
+        <note>Class = "UINavigationItem"; title = "title"; ObjectID = "4nQ-Va-itJ";</note>
+      </trans-unit>
+      <trans-unit id="5aH-KX-x3S.normalTitle" xml:space="preserve">
+        <source>Leave Review</source>
+        <target>Leave Review</target>
+        <note>Class = "UIButton"; normalTitle = "Leave Review"; ObjectID = "5aH-KX-x3S";</note>
+      </trans-unit>
+      <trans-unit id="9N7-Bx-6G2.text" xml:space="preserve">
+        <source>DISCOVER PLACES NEAR YOU</source>
+        <target>DISCOVER PLACES NEAR YOU</target>
+        <note>Class = "UILabel"; text = "DISCOVER PLACES NEAR YOU"; ObjectID = "9N7-Bx-6G2";</note>
+      </trans-unit>
+      <trans-unit id="12c-KK-zfP.text" xml:space="preserve">
+        <source>15 may 2019</source>
+        <target>15 may 2019</target>
+        <note>Class = "UILabel"; text = "15 may 2019"; ObjectID = "12c-KK-zfP";</note>
+      </trans-unit>
+      <trans-unit id="28J-zN-cqR.normalTitle" xml:space="preserve">
+        <source>Articles</source>
+        <target>Articles</target>
+        <note>Class = "UIButton"; normalTitle = "Articles"; ObjectID = "28J-zN-cqR";</note>
+      </trans-unit>
+      <trans-unit id="60w-cG-0Di.text" xml:space="preserve">
+        <source>Lorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply.</source>
+        <target>Lorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply.</target>
+        <note>Class = "UILabel"; text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply."; ObjectID = "60w-cG-0Di";</note>
+      </trans-unit>
+      <trans-unit id="AOJ-rf-9RP.text" xml:space="preserve">
+        <source>namenamenamenamenamenamenamenamena</source>
+        <target>namenamenamenamenamenamenamenamena</target>
+        <note>Class = "UILabel"; text = "namenamenamenamenamenamenamenamena"; ObjectID = "AOJ-rf-9RP";</note>
+      </trans-unit>
+      <trans-unit id="AmP-85-7MU.title" xml:space="preserve">
+        <source>About us</source>
+        <target>About us</target>
+        <note>Class = "UINavigationItem"; title = "About us"; ObjectID = "AmP-85-7MU";</note>
+      </trans-unit>
+      <trans-unit id="BML-jW-V2M.text" xml:space="preserve">
+        <source>Best food and drink in Nazareth</source>
+        <target>Best food and drink in Nazareth</target>
+        <note>Class = "UILabel"; text = "Best food and drink in Nazareth"; ObjectID = "BML-jW-V2M";</note>
+      </trans-unit>
+      <trans-unit id="BtW-Pj-9RV.title" xml:space="preserve">
+        <source>Map</source>
+        <target>Map</target>
+        <note>Class = "UINavigationItem"; title = "Map"; ObjectID = "BtW-Pj-9RV";</note>
+      </trans-unit>
+      <trans-unit id="BuH-GX-8T2.text" xml:space="preserve">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "BuH-GX-8T2";</note>
+      </trans-unit>
+      <trans-unit id="DVg-SA-dKr.normalTitle" xml:space="preserve">
+        <source>About us</source>
+        <target>About us</target>
+        <note>Class = "UIButton"; normalTitle = "About us"; ObjectID = "DVg-SA-dKr";</note>
+      </trans-unit>
+      <trans-unit id="FEm-yz-zbx.text" xml:space="preserve">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "FEm-yz-zbx";</note>
+      </trans-unit>
+      <trans-unit id="FM7-UX-RXr.placeholder" xml:space="preserve">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Class = "UITextField"; placeholder = "Email"; ObjectID = "FM7-UX-RXr";</note>
+      </trans-unit>
+      <trans-unit id="JdS-W5-1sn.normalTitle" xml:space="preserve">
+        <source>Share App</source>
+        <target>Share App</target>
+        <note>Class = "UIButton"; normalTitle = "Share App"; ObjectID = "JdS-W5-1sn";</note>
+      </trans-unit>
+      <trans-unit id="Jh8-ul-mja.text" xml:space="preserve">
+        <source>namenamenamenamenamenamenamenamena</source>
+        <target>namenamenamenamenamenamenamenamena</target>
+        <note>Class = "UILabel"; text = "namenamenamenamenamenamenamenamena"; ObjectID = "Jh8-ul-mja";</note>
+      </trans-unit>
+      <trans-unit id="KMm-cf-VZf.text" xml:space="preserve">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "KMm-cf-VZf";</note>
+      </trans-unit>
+      <trans-unit id="NMC-hH-qNK.text" xml:space="preserve">
+        <source>namenamenamenamenamenamenamenamena</source>
+        <target>namenamenamenamenamenamenamenamena</target>
+        <note>Class = "UILabel"; text = "namenamenamenamenamenamenamenamena"; ObjectID = "NMC-hH-qNK";</note>
+      </trans-unit>
+      <trans-unit id="OPW-JO-5Tt.title" xml:space="preserve">
+        <source>Home</source>
+        <target>Home</target>
+        <note>Class = "UINavigationItem"; title = "Home"; ObjectID = "OPW-JO-5Tt";</note>
+      </trans-unit>
+      <trans-unit id="SoO-Dl-vka.normalTitle" xml:space="preserve">
+        <source>Leave Review</source>
+        <target>Leave Review</target>
+        <note>Class = "UIButton"; normalTitle = "Leave Review"; ObjectID = "SoO-Dl-vka";</note>
+      </trans-unit>
+      <trans-unit id="VGK-Dv-s9T.placeholder" xml:space="preserve">
+        <source>Search</source>
+        <target>Search</target>
+        <note>Class = "UITextField"; placeholder = "Search"; ObjectID = "VGK-Dv-s9T";</note>
+      </trans-unit>
+      <trans-unit id="X1k-gr-xHs.title" xml:space="preserve">
+        <source>Details</source>
+        <target>Details</target>
+        <note>Class = "UINavigationItem"; title = "Details"; ObjectID = "X1k-gr-xHs";</note>
+      </trans-unit>
+      <trans-unit id="X8n-9Z-9gI.title" xml:space="preserve">
+        <source>Filter</source>
+        <target>Filter</target>
+        <note>Class = "UINavigationItem"; title = "Filter"; ObjectID = "X8n-9Z-9gI";</note>
+      </trans-unit>
+      <trans-unit id="Y77-uy-XZ5.placeholder" xml:space="preserve">
+        <source>Name</source>
+        <target>Name</target>
+        <note>Class = "UITextField"; placeholder = "Name"; ObjectID = "Y77-uy-XZ5";</note>
+      </trans-unit>
+      <trans-unit id="ZBD-uw-zcu.text" xml:space="preserve">
+        <source>Best food and drink in Nazareth</source>
+        <target>Best food and drink in Nazareth</target>
+        <note>Class = "UILabel"; text = "Best food and drink in Nazareth"; ObjectID = "ZBD-uw-zcu";</note>
+      </trans-unit>
+      <trans-unit id="age-mn-Pff.text" xml:space="preserve">
+        <source>Where The Pancakes Are</source>
+        <target>Where The Pancakes Are</target>
+        <note>Class = "UILabel"; text = "Where The Pancakes Are"; ObjectID = "age-mn-Pff";</note>
+      </trans-unit>
+      <trans-unit id="b1H-3f-AYC.text" xml:space="preserve">
+        <source>Message</source>
+        <target>Message</target>
+        <note>Class = "UILabel"; text = "Message"; ObjectID = "b1H-3f-AYC";</note>
+      </trans-unit>
+      <trans-unit id="bIP-7K-j12.normalTitle" xml:space="preserve">
+        <source>Send Message</source>
+        <target>Send Message</target>
+        <note>Class = "UIButton"; normalTitle = "Send Message"; ObjectID = "bIP-7K-j12";</note>
+      </trans-unit>
+      <trans-unit id="cQH-u8-Dne.text" xml:space="preserve">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "cQH-u8-Dne";</note>
+      </trans-unit>
+      <trans-unit id="eJs-RA-C9K.text" xml:space="preserve">
+        <source>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</source>
+        <target>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</target>
+        <note>Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "eJs-RA-C9K";</note>
+      </trans-unit>
+      <trans-unit id="ghU-21-XGg.text" xml:space="preserve">
+        <source>Ahmed Omran</source>
+        <target>Ahmed Omran</target>
+        <note>Class = "UILabel"; text = "Ahmed Omran"; ObjectID = "ghU-21-XGg";</note>
+      </trans-unit>
+      <trans-unit id="gix-qK-UVR.title" xml:space="preserve">
+        <source>Show Route</source>
+        <target>Show Route</target>
+        <note>Class = "UIBarButtonItem"; title = "Show Route"; ObjectID = "gix-qK-UVR";</note>
+      </trans-unit>
+      <trans-unit id="gqt-7w-id8.normalTitle" xml:space="preserve">
+        <source>Filter</source>
+        <target>Filter</target>
+        <note>Class = "UIButton"; normalTitle = "Filter"; ObjectID = "gqt-7w-id8";</note>
+      </trans-unit>
+      <trans-unit id="h9a-sd-Ev4.text" xml:space="preserve">
+        <source>Keyword Keyword Keyword Keyword Keyword</source>
+        <target>Keyword Keyword Keyword Keyword Keyword</target>
+        <note>Class = "UILabel"; text = "Keyword Keyword Keyword Keyword Keyword"; ObjectID = "h9a-sd-Ev4";</note>
+      </trans-unit>
+      <trans-unit id="hnk-ze-oeS.placeholder" xml:space="preserve">
+        <source>Phone</source>
+        <target>Phone</target>
+        <note>Class = "UITextField"; placeholder = "Phone"; ObjectID = "hnk-ze-oeS";</note>
+      </trans-unit>
+      <trans-unit id="inc-Kc-fC3.title" xml:space="preserve">
+        <source>Articles</source>
+        <target>Articles</target>
+        <note>Class = "UINavigationItem"; title = "Articles"; ObjectID = "inc-Kc-fC3";</note>
+      </trans-unit>
+      <trans-unit id="j59-tw-DKa.placeholder" xml:space="preserve">
+        <source>Name</source>
+        <target>Name</target>
+        <note>Class = "UITextField"; placeholder = "Name"; ObjectID = "j59-tw-DKa";</note>
+      </trans-unit>
+      <trans-unit id="jhr-dE-2aV.text" xml:space="preserve">
+        <source>Comment</source>
+        <target>Comment</target>
+        <note>Class = "UILabel"; text = "Comment"; ObjectID = "jhr-dE-2aV";</note>
+      </trans-unit>
+      <trans-unit id="lnC-UC-a30.placeholder" xml:space="preserve">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Class = "UITextField"; placeholder = "Email"; ObjectID = "lnC-UC-a30";</note>
+      </trans-unit>
+      <trans-unit id="nFo-QD-ZsC.title" xml:space="preserve">
+        <source>Contact Us</source>
+        <target>Contact Us</target>
+        <note>Class = "UINavigationItem"; title = "Contact Us"; ObjectID = "nFo-QD-ZsC";</note>
+      </trans-unit>
+      <trans-unit id="nhb-La-dIi.text" xml:space="preserve">
+        <source>(250 person review)</source>
+        <target>(250 person review)</target>
+        <note>Class = "UILabel"; text = "(250 person review)"; ObjectID = "nhb-La-dIi";</note>
+      </trans-unit>
+      <trans-unit id="nqb-wN-uhM.text" xml:space="preserve">
+        <source>Similar Restaurant </source>
+        <target>Similar Restaurant </target>
+        <note>Class = "UILabel"; text = "Similar Restaurant "; ObjectID = "nqb-wN-uhM";</note>
+      </trans-unit>
+      <trans-unit id="nuK-Js-aL3.text" xml:space="preserve">
+        <source>namenamenamenamenamenamenamenamena</source>
+        <target>namenamenamenamenamenamenamenamena</target>
+        <note>Class = "UILabel"; text = "namenamenamenamenamenamenamenamena"; ObjectID = "nuK-Js-aL3";</note>
+      </trans-unit>
+      <trans-unit id="pJl-Oe-urP.text" xml:space="preserve">
+        <source>All Food and Drink</source>
+        <target>All Food and Drink</target>
+        <note>Class = "UILabel"; text = "All Food and Drink"; ObjectID = "pJl-Oe-urP";</note>
+      </trans-unit>
+      <trans-unit id="pUb-Ya-YKM.normalTitle" xml:space="preserve">
+        <source>Events</source>
+        <target>Events</target>
+        <note>Class = "UIButton"; normalTitle = "Events"; ObjectID = "pUb-Ya-YKM";</note>
+      </trans-unit>
+      <trans-unit id="qHn-mj-tKC.text" xml:space="preserve">
+        <source>Address
+Flat Iron Square
+85a Southwark Bridge Road
+Palastine
+Greater nauthrat
+SE1 0NQ</source>
+        <target>Address
+Flat Iron Square
+85a Southwark Bridge Road
+Palastine
+Greater nauthrat
+SE1 0NQ</target>
+        <note>Class = "UILabel"; text = "Address\nFlat Iron Square\n85a Southwark Bridge Road\nPalastine\nGreater nauthrat\nSE1 0NQ"; ObjectID = "qHn-mj-tKC";</note>
+      </trans-unit>
+      <trans-unit id="qb0-V4-cK0.placeholder" xml:space="preserve">
+        <source>Categories</source>
+        <target>Categories</target>
+        <note>Class = "UITextField"; placeholder = "Categories"; ObjectID = "qb0-V4-cK0";</note>
+      </trans-unit>
+      <trans-unit id="sgs-dg-kgH.text" xml:space="preserve">
+        <source>Lorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply.</source>
+        <target>Lorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply.</target>
+        <note>Class = "UILabel"; text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply dummy text of the printing and typesetting industry.aLorem Ipsum is simply."; ObjectID = "sgs-dg-kgH";</note>
+      </trans-unit>
+      <trans-unit id="t0u-hQ-N0m.title" xml:space="preserve">
+        <source>Result</source>
+        <target>Result</target>
+        <note>Class = "UINavigationItem"; title = "Result"; ObjectID = "t0u-hQ-N0m";</note>
+      </trans-unit>
+      <trans-unit id="tDT-Ll-tQ5.normalTitle" xml:space="preserve">
+        <source>View Review</source>
+        <target>View Review</target>
+        <note>Class = "UIButton"; normalTitle = "View Review"; ObjectID = "tDT-Ll-tQ5";</note>
+      </trans-unit>
+      <trans-unit id="tjw-Hq-rD2.text" xml:space="preserve">
+        <source>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</source>
+        <target>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</target>
+        <note>Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "tjw-Hq-rD2";</note>
+      </trans-unit>
+      <trans-unit id="vjP-q8-4lc.text" xml:space="preserve">
+        <source>namenamenamenamenamenamenamenamena</source>
+        <target>namenamenamenamenamenamenamenamena</target>
+        <note>Class = "UILabel"; text = "namenamenamenamenamenamenamenamena"; ObjectID = "vjP-q8-4lc";</note>
+      </trans-unit>
+      <trans-unit id="vkl-el-Qde.text" xml:space="preserve">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "vkl-el-Qde";</note>
+      </trans-unit>
+      <trans-unit id="w7X-eL-SZ9.normalTitle" xml:space="preserve">
+        <source>Contact us</source>
+        <target>Contact us</target>
+        <note>Class = "UIButton"; normalTitle = "Contact us"; ObjectID = "w7X-eL-SZ9";</note>
+      </trans-unit>
+      <trans-unit id="xDa-o2-4wu.title" xml:space="preserve">
+        <source>Clear</source>
+        <target>Clear</target>
+        <note>Class = "UIBarButtonItem"; title = "Clear"; ObjectID = "xDa-o2-4wu";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Nazareth/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.2.1" build-num="11B500"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Nazareth</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Nazareth/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.2.1" build-num="11B500"/>
+    </header>
+    <body>
+      <trans-unit id="Are" xml:space="preserve">
+        <source>Are</source>
+        <note>profuct list lang</note>
+      </trans-unit>
+      <trans-unit id="Contact us filed" xml:space="preserve">
+        <source>Contact us filed</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="Done" xml:space="preserve">
+        <source>Done</source>
+        <note>profuct list lang</note>
+      </trans-unit>
+      <trans-unit id="Ok" xml:space="preserve">
+        <source>Ok</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Review Filed" xml:space="preserve">
+        <source>Review Filed</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="Similar" xml:space="preserve">
+        <source>Similar</source>
+        <note>profuct list lang</note>
+      </trans-unit>
+      <trans-unit id="Where The" xml:space="preserve">
+        <source>Where The</source>
+        <note>profuct list lang</note>
+      </trans-unit>
+      <trans-unit id="email not correct" xml:space="preserve">
+        <source>email not correct</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="en" xml:space="preserve">
+        <source>en</source>
+        <note>profuct list lang</note>
+      </trans-unit>
+      <trans-unit id="enter rate or chose categour" xml:space="preserve">
+        <source>enter rate or chose categour</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="enter your Email" xml:space="preserve">
+        <source>enter your Email</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="enter your comment" xml:space="preserve">
+        <source>enter your comment</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="enter your message" xml:space="preserve">
+        <source>enter your message</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="enter your name" xml:space="preserve">
+        <source>enter your name</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="enter your phone" xml:space="preserve">
+        <source>enter your phone</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="filter" xml:space="preserve">
+        <source>filter</source>
+        <note>hhhh</note>
+      </trans-unit>
+      <trans-unit id="person review" xml:space="preserve">
+        <source>person review</source>
+        <note>hhhh
+   profuct list lang</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
